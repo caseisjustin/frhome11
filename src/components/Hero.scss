@@ -1,0 +1,50 @@
+
+
+
+.hero_wrp{
+
+    & .hero_wrp_elems{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 580px;
+        padding: 40px 0;
+        gap: 1rem;
+
+        & h2{
+            font-size: 50px;
+            color: #fff;
+        }
+
+        & b{
+            color: #fff;
+            font-size: 24px;
+            font-weight: 400;
+        }
+
+        .hero_btns{
+            display: flex;
+            gap: 1rem;
+            
+            & button{
+                border-radius: 50px;
+                padding: 10px 25px;
+                font-size: 16px;
+                border: 1px #006eff solid;
+                color: #006eff;
+                background-color: transparent;
+            }
+
+            & >:nth-child(1){
+                background-color: #006eff;
+                color: #fff;
+            }
+
+            & button:hover{
+                cursor: pointer;
+                opacity: .8;
+            }
+        }
+    }
+}

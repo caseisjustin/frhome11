@@ -1,0 +1,84 @@
+.cards {
+    width: 100%;
+}
+
+.cards_wrp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 500px 500px 500px;
+    padding: 0 10px;
+    gap: 1rem;
+
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 580px;
+        padding: 80px 0;
+        gap: 1rem;
+        background-size: 140%;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        & h4{
+            font-size: 30px;
+        }
+
+        & p{
+            font-size: 16px;
+        }
+
+        .card_btns {
+            display: flex;
+            gap: 1rem;
+
+            & button {
+                border-radius: 50px;
+                padding: 10px 25px;
+                font-size: 16px;
+                border: 1px #006eff solid;
+                color: #006eff;
+                background-color: transparent;
+            }
+
+            &>:nth-child(1) {
+                background-color: #006eff;
+                color: #fff;
+            }
+
+            & button:hover {
+                cursor: pointer;
+                opacity: .8;
+            }
+        }
+    }
+
+    &>:nth-child(1) {
+        background-image: url(https://www.apple.com/v/home/bv/images/promos/airpods-4/promo_airpods_4_avail__bl22kvpg6ez6_large.jpg);
+        color: #fff;
+        justify-content: flex-end;
+    }
+
+    &>:nth-child(2) {
+        background-image: url(https://www.apple.com/v/home/bv/images/promos/apple-watch-series-10/promo_apple_watch_series_10_avail_lte__c70y29goir42_large.jpg);
+    }
+
+    &>:nth-child(3) {
+        background-image: url(https://www.apple.com/v/home/bv/images/promos/macbook-air-m3/promo_macbook_air_m3__e43jegok3wuq_large.jpg);
+    }
+
+    &>:nth-child(4) {
+        background-image: url(https://www.apple.com/v/home/bv/images/promos/apple-small-business/promo_asb__gajxkvbkiqie_large.png);
+    }
+
+    &>:nth-child(5) {
+        background-image: url(https://www.apple.com/v/home/bv/images/promos/carriers/promo_carrier__e0izvxwqosgi_large.jpg);
+        justify-content: flex-end;
+    }
+
+    &>:nth-child(6) {
+        background-image: url(https://www.apple.com/v/home/bv/images/promos/iphone-tradein/promo_iphone_tradein__bugw15ka691e_large.jpg);
+    }
+}
